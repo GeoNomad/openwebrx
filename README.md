@@ -1,6 +1,14 @@
 OpenWebRX
 =========
 
+This fork of OpenWebRX is documented at http://ve3sun.com/OpenWebRX/
+
+An IBP button has been added to monitor an individual IBP beacon automatically by tuning the radio and controlling the mute.
+
+The notes on http://ve3sun.com/OpenWebRX/ show how to modify the javascript locally while connecting to any SDR host.
+
+========================================================================================================================
+
 OpenWebRX is a multi-user SDR receiver software with a web interface.
 
 ![OpenWebRX](http://blog.sdr.hu/images/openwebrx/screenshot.png)
