@@ -1,7 +1,7 @@
 /*
 
 OpenWebRX (c) Copyright 2013-2014 Andras Retzler <randras@sdr.hu>
-Modified by VE3SUN@benlo.com to add IBP monitor function
+Modified by VE3SUN@benlo.com to add IBP monitor function see http://ve3sun.com/OpenWebRX/
 
 This file is part of OpenWebRX.
 
@@ -4218,7 +4218,7 @@ function dx(arr)
 					for (var i=0; i < dx_ibp_list.length; i++) {
 						var s = slot - dx_ibp_list[i].off;
 						if (s < 0) s = 18 + s;
-						console.log('IBP '+freq+'KHz '+ min +':'+ sec +' slot='+ slot +' off='+ off +' s='+ s +' '+ dx_ibp[s*2] +' '+ dx_ibp[s*2+1]);
+//						console.log('IBP '+freq+'KHz '+ min +':'+ sec +' slot='+ slot +' off='+ off +' s='+ s +' '+ dx_ibp[s*2] +' '+ dx_ibp[s*2+1]);
 						
 						// label may now be out of DOM if we're panning & zooming around
 						var el = w3_el_id(dx_ibp_list[i].idx +'-id-dx-label');
@@ -5487,7 +5487,6 @@ function owrx_msg_cb(param, ws)
 			break;
 		case "wf_fps":
 			wf_fps = parseInt(param[1]);
-			wf_fps = 1;
 			break;
 		case "start":
 			bin_server = parseInt(param[1]);
@@ -5660,4 +5659,4 @@ function do_IBP()
        }
 }
 
-kiwi_check_js_version.push({ VERSION_MAJ:1, VERSION_MIN:117, file:'openwebrx/openwebrx.js' });
+kiwi_check_js_version.push({ VERSION_MAJ:1, VERSION_MIN:118, file:'openwebrx/openwebrx.js' });
